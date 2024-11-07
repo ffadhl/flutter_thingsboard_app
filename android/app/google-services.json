@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "238642088634",
+    "project_id": "ferbos-thingsboard-app",
+    "storage_bucket": "ferbos-thingsboard-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:238642088634:android:ab020b72359ed334019083",
+        "android_client_info": {
+          "package_name": "org.thingsboard.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIvS0hx1HyQWi6WCAYOeG13aQ0xaFhqK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

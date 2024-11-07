@@ -28,14 +28,6 @@ part 'has_tb_context.dart';
 enum NotificationType { info, warn, success, error }
 
 class TbContext implements PopEntry {
-  @override
-  void onPopInvoked(bool didPop) {
-    onPopInvokedImpl(didPop);
-  }
-  @override
-  void onPopInvokedWithResult(bool didPop, dynamic result) {
-    onPopInvokedImpl(didPop);
-  }
   static final DeviceInfoPlugin deviceInfoPlugin = DeviceInfoPlugin();
   bool _initialized = false;
   bool isUserLoaded = false;
@@ -58,7 +50,7 @@ class TbContext implements PopEntry {
   final ValueNotifier<bool> canPopNotifier = ValueNotifier<bool>(false);
 
   @override
-  PopInvokedCallback get popInvokedCallback => onPopInvokedImpl;
+  PopInvokedCallback get onPopInvoked => onPopInvokedImpl;
 
   GlobalKey<ScaffoldMessengerState> messengerKey =
       GlobalKey<ScaffoldMessengerState>();

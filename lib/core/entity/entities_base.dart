@@ -106,9 +106,7 @@ mixin ContactBasedBase<T extends ContactBased, P> on EntitiesBase<T, P> {
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    FittedBox(
-                      fit: BoxFit.fitWidth,
-                      alignment: Alignment.centerLeft,
+                    Flexible(
                       child: Text(
                         contact.getName(),
                         style: const TextStyle(
@@ -117,6 +115,8 @@ mixin ContactBasedBase<T extends ContactBased, P> on EntitiesBase<T, P> {
                           fontWeight: FontWeight.w500,
                           height: 20 / 14,
                         ),
+                        overflow: TextOverflow.ellipsis,
+                        maxLines: 2,
                       ),
                     ),
                     Text(
